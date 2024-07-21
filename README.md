@@ -55,3 +55,7 @@ Resize the generated masks back to the original size of the images.
 12. **Display an Image and its Generated Mask**:
 Define a function to display a test image and its corresponding generated mask side by side.
 Use Matplotlib to create a figure and plot the test image and mask in subplots for visual comparison.
+
+
+## THEORETICAL BACKGROUND & APPROACH IDEA
+Please check out "LINEAR FEATURE EXTRACTION IN SATELLITE IMAGERY.docx" file for more details.
