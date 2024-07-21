@@ -62,3 +62,7 @@ Use Matplotlib to create a figure and plot the test image and mask in subplots f
 
 ## THEORETICAL BACKGROUND & APPROACH IDEA
 Please check out "LINEAR FEATURE EXTRACTION IN SATELLITE IMAGERY.docx" file for more details.
+
+## RESULTS
+The model achieved a training accuracy of approx. 96%. Below is the graphs for accuracy and loss for both training and validation.
+![train_val_accuracy](https://github.com/user-attachments/assets/f2e45639-5fb0-4c49-802e-351f4b0d23d0)
