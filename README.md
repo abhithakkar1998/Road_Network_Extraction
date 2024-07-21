@@ -13,4 +13,45 @@ Features:
 - Implementation in Python with TensorFlow-Keras and OpenCV.
 
 ## IMPLEMENTATION & WORKING
-< TBD >
+1. **Setup Environment and Import Libraries**:
+Ensure you have a Python environment set up with the necessary libraries installed. These libraries include TensorFlow, Keras, OpenCV, NumPy, Pandas, Matplotlib, and scikit-learn.
+Import the necessary libraries for handling data, images, model loading, training, evaluation, and plotting.
+
+2. **Load Metadata**:
+Read the metadata.csv file which contains paths to the satellite images and the information on which split (train, valid, test) each image belongs to.
+Filter the metadata to get the train and validation set images.
+
+3. **Load Class Dictionary**:
+Read the class_dict.csv file to map pixel values to class names.
+
+4. **Preprocess the Image**:
+Define a function to read and preprocess the images. This includes resizing the image to the input size expected by the model and normalizing the pixel values.
+
+5. **Binarize the Masks**:
+Define a function to binarize the mask images at a threshold of 128. Greater than 128 should be set to 255 and less than 128 should be set to 0.
+
+6. **Create Data Generators**:
+Create custom data generators to load the images and masks in batches to avoid memory issues during training.
+
+7. **Define the U-Net Model**:
+Define the U-Net model architecture using Keras.
+
+8. **Compile the Model**:
+Compile the model with an appropriate optimizer (e.g., Adam), loss function (e.g., binary crossentropy), and metrics (e.g., accuracy).
+
+9. **Train the Model**:
+Train the model using the training and validation data generators.
+Use callbacks such as ModelCheckpoint and EarlyStopping to save the best model and stop training when performance stops improving.
+
+10. **Evaluate the Model**:
+Evaluate the model on the validation set.
+Calculate performance metrics such as precision, recall, and F1 score using scikit-learn.
+
+11. **Generate Masks for Test Images**:
+Load the test set images.
+Use the trained model to generate masks for these images.
+Resize the generated masks back to the original size of the images.
+
+12. **Display an Image and its Generated Mask**:
+Define a function to display a test image and its corresponding generated mask side by side.
+Use Matplotlib to create a figure and plot the test image and mask in subplots for visual comparison.
