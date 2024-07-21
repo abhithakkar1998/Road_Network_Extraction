@@ -11,6 +11,9 @@ Features:
 - Semantic segmentation for road network extraction from satellite imagery.
 - U-Net architecture for efficient pixel-wise classification.
 - Implementation in Python with TensorFlow-Keras and OpenCV.
+ 
+Dataset Link: https://drive.google.com/drive/folders/14zuHotv4NZaEayzfgS_dwPz39ktKAqZQ <br/>
+(NOTE: This has been provided by Suhora Space Analytics for a Task-based Assessment. I take no claim on owning this dataset. Since the dataset link is public I am hereby sharing it. I'm not responsible if this link stops working.)
 
 ## IMPLEMENTATION & WORKING
 1. **Setup Environment and Import Libraries**:
